@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- header -->
+      <header class="container__header">
+        <h1 class="header__heading">Admin Panel</h1>
+        <!-- navbar -->
+        <nav class="header__nav">
+          <ul>
+            <li class="header__list"><a href="#">Options</a></li>
+            <li class="header__list"><a href="#">Static Pages</a></li>
+            <li class="header__list"><a href="#">Posts</a></li>
+            <li class="header__list"><a href="#">Modules</a></li>
+            <li class="header__list"><a href="#">Navigation Links</a></li>
+            <li class="header__list"><a href="#">Mailing List</a></li>
+            <li class="header__list"><a href="#">Themes</a></li>
+            <li class="header__list"><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Content -->
+      <main class="main">
+        <!-- navigation links -->
+        <h1>Navigation Links</h1>
+        <table class="main__table">
+          <thead>
+            <th>URL</th>
+            <th>Name</th>
+            <th>Edit</th>
+            <th>Move</th>
+            <th>visible</th>
+            <th>Delete</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">/</a></td>
+              <td>Home</td>
+              <td><button class="color_lg">Edit</button></td>
+              <td><button class="color_lg">v</button></td>
+              <td><button class="color_grn">visible</button></td>
+              <td><button class="color_red">X</button></td>
+            </tr>
+            <tr>
+              <td><a href="#">/posts</a></td>
+              <td>Posts</td>
+              <td><button class="color_lg">Edit</button></td>
+              <td>
+                <button class="color_lg">^</button>
+                <button class="color_lg">v</button>
+              </td>
+              <td><button class="color_grn">visible</button></td>
+              <td><button class="color_red">X</button></td>
+            </tr>
+            <tr>
+              <td><a href="#">/contact</a></td>
+              <td>Contact</td>
+              <td><button class="color_lg">Edit</button></td>
+              <td><button class="color_lg">^</button></td>
+              <td><button class="color_grn">visible</button></td>
+              <td><button class="color_red">X</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Quick links -->
+        <h1>Quick Links</h1>
+        <section class="main__quicklinks">
+          <button class="color_lg ql1">Link Static Page</button>
+          <button class="color_lg ql1">Link Post</button>
+          <button class="color_lg ql1">Link Module</button>
+        </section>
+        <!-- Add new link -->
+        <h1>Add New Link</h1>
+        <section class="main__addnewlink">
+          <form action="">
+            <input type="text" placeholder="URL" />
+            <input type="text" placeholder="Name" />
+            <button type="submit" class="color_lg ql1">Add</button>
+          </form>
+        </section>
+        <!-- options -->
+        <h1>Options</h1>
+        <section class="main__options">
+          <form action="">
+            <label for="">Navigation Link Spacer</label>
+            <select name="" id="">
+              <option value="">Wider Space</option>
+              <option value="">Wider Space</option>
+              <option value="">Wider Space</option>
+            </select>
+            <br />
+            <p>Set the spacing between the navigation links</p>
+          </form>
+        </section>
+        <hr />
+        <button class="color_lg ql1">Save</button>
+      </main>
+    </div>
+  </body>
+</html>
